@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "FjallaOne";
+  src: url("./assets/fonts/Fjalla_One/FjallaOne-Regular.ttf");
+}
+
+:root {
+  --claro: #b7e4c7;
+  --menta: #92d5bf;
+  --limao: #c7ea46;
+  --musgo: #67864f;
+  --oliva: #b4b347;
+  --navbar: #092c25;
+  --navitens: #c4d4b0;
+
+}
+
+*{
+  font-family: 'FjallaOne';
+}
+
+#root {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  margin-top: 0px;
+  padding-top: 42px;
+}
+
+
+
+.App{
+  margin: auto;
+}
