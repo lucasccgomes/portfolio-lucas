@@ -1,3 +1,46 @@
+.home{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    background-color:  #444;
+    color: #fff;
+    padding-bottom: 20px;
+
+}
+
 .profile-photo img{
     max-width: 250px;
+}
+
+.brief-about{
+    max-width: 900px;
+    text-align: justify;
+    margin-right: 60px;
+    margin-top: 100px;
+    
+}
+
+.brief-about p{
+    margin: auto;
+    
+}
+
+.helo{
+    font-size: 2em;
+}
+
+.myname{
+    font-size: 4em;
+    line-height: normal;
+    text-align: justify;
+    margin: 0;
+}
+
+.brief-descrition{
+    margin-top: 5px;
+}
+
+.brief-descrition p{
+    font-size: 1.3em;
+    line-height: 1.3;
 }

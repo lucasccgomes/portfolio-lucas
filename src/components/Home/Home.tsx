@@ -7,12 +7,14 @@ const Home = () => {
     return (
         <div className='home'>
             <div className="brief-about">
-                <p>Olá! Meu nome é,</p>
-                <h1>Lucas</h1><h1>Gomes</h1>
-                <p>Sou um desenvolvedor Front-end em início de carreira.</p>
-                <p>Tenho habilidades em Git, GitHub, React, TypeScript, JavaScript, HTML e CSS, adquiridas por meio de estudos e projetos pessoais.</p>
-                <p>Sou uma pessoa curiosa, comprometida e disposta a aprender constantemente para aprimorar minhas habilidades e contribuir com soluções eficientes.</p>
-                <p>Gosto de trabalhar em equipe e estou em busca de oportunidades para crescer profissionalmente e aplicar minhas habilidades de forma criativa.</p>
+                <p className='helo'>Olá! Meu nome é,</p>
+                <h1 className='myname'>Lucas Gomes </h1>
+                <div className="brief-descrition">
+                    <p>Sou um desenvolvedor Front-end em início de carreira. <br />
+                Tenho habilidades em Git, GitHub, React, TypeScript, JavaScript, HTML e CSS, adquiridas por meio de estudos e projetos pessoais. <br />
+                Sou uma pessoa curiosa, comprometida e disposta a aprender constantemente para aprimorar minhas habilidades e contribuir com soluções eficientes. <br />
+                Gosto de trabalhar em equipe e estou em busca de oportunidades para crescer profissionalmente e aplicar minhas habilidades de forma criativa.</p>
+                </div>
             </div>
             <div className="profile-photo">
                 <img src={ProfilePhoto2} alt="Lucas Gomes" />
