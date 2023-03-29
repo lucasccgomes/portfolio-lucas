@@ -1,18 +1,12 @@
 /* Fontes */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
-/* Estilos globais */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
+.about {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  color: #444;
-  background-color: #f8f8f8;
+  color: #f8f8f8;
+  background-color:  #444;
   line-height: 1.5;
 }
 
