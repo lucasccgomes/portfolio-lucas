@@ -1,15 +1,15 @@
 .home{
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
-    background-color:  #444;
-    color: #fff;
-    padding-bottom: 20px;
+    background-color: var(--cinzaclaro);
+    color: var(--cinzaescuro);
+    padding-bottom: 70px;
 
 }
 
 .profile-photo img{
     max-width: 250px;
+    border-radius: 15%;
 }
 
 .brief-about{
@@ -29,6 +29,10 @@
     font-size: 2em;
 }
 
+.myname b{
+    color: var(--azul);
+}
+
 .myname{
     font-size: 4em;
     line-height: normal;
@@ -36,11 +40,14 @@
     margin: 0;
 }
 
-.brief-descrition{
+.brief-description{
     margin-top: 5px;
+    max-width: 660px;
+    margin-right: 60px ;
 }
 
-.brief-descrition p{
-    font-size: 1.3em;
+.brief-description p{
+    font-size: 1.1em;
     line-height: 1.3;
+    color: var(--cinzam);
 }
