@@ -4,6 +4,21 @@
 }
 
 :root {
+
+  
+  /* Cor primária:*/ --azul: #007fff; --azulsec: #5DA5E8; --azulsecescuro: #0040A0; /*(um azul escuro) para a navbar e links*/
+  /* Cor secundária:*/ --verolivia: #5CB85C; /*(um verde-oliva) para botões e acentos*/
+  /* Cor de fundo:*/ --cinzaclaro: #F5F5F5; /*(um cinza claro) para o background*/
+  /* Cor do texto:*/ --cinzaescuro: #333333; --cinzam: #555555;/*(um cinza escuro) para textos principais*/
+  /* Cor de destaque:*/ --laranja: #FFA500; /*(um laranja) para destacar elementos importantes*/
+
+
+  
+  
+  
+  
+  
+  
   --claro: #b7e4c7;
   --menta: #92d5bf;
   --limao: #c7ea46;
