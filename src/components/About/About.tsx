@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css'
 import ImgAbout from '../../assets/img/about.png'
+import ImgExperience from '../../assets/img/experience.png'
 
 const About = () => {
     return (
@@ -11,9 +12,7 @@ const About = () => {
 
             </div>
             <div className="about-me">
-                <div className="img-about">
-                    <img src={ImgAbout} alt="imagem representa foco e objetivo" />
-                </div>
+
                 <div className="about-description">
                     <h1>🌎 Olá Mundo!</h1>
                     <p>
@@ -32,6 +31,9 @@ const About = () => {
                         dominar as tecnologias mais recentes e avançadas da área de desenvolvimento.
                     </p>
                 </div>
+                <div className="img-about">
+                    <img src={ImgAbout} alt="imagem representa foco e objetivo" />
+                </div>
             </div>
             {/*
             <section>
@@ -43,47 +45,44 @@ const About = () => {
                 </p>
             </section>
         */}
-            <section>
-                <h2>👨🏻‍🎓 Meus cursos</h2>
-                <p>
-                    Eu estou sempre procurando maneiras de aprimorar minhas
-                    habilidades e conhecimentos. Nesse sentido,
-                    tenho concluído vários cursos online nos últimos meses
-                    para me aprofundar em tecnologias front-end,
-                    incluindo o framework React.
-                    A seguir, você pode conferir alguns dos cursos
-                    que concluí recentemente:
-                </p>
-                <ul>
-                    <li>EdX - CSS Basics</li>
-                    <li>EdX - HTML5 and CSS Fundamentals</li>
-                </ul>
+            <section className='courses'>
+                <div className="info-courses">
+                    <h1>👨🏻‍🎓 Meus cursos</h1>
+                    <p>
+                        Eu estou sempre procurando maneiras de aprimorar minhas
+                        habilidades e conhecimentos. Nesse sentido,
+                        tenho concluído vários cursos online nos últimos meses
+                        para me aprofundar em tecnologias front-end,
+                        incluindo o framework React.
+                        A seguir, você pode conferir alguns dos cursos
+                        que concluí recentemente:
+                    </p>
+                    <ul>
+                        <li>EdX - CSS Basics</li>
+                        <li>EdX - HTML5 and CSS Fundamentals</li>
+                    </ul>
+                </div>
             </section>
-            <section>
-                <h2>✅ Minha experiência</h2>
-                <p>
-                    Além de minhas habilidades técnicas em desenvolvimento front-end,
-                    também estou trabalhando como estagiário na área de front-end, aplicando novas tecnologias
-                    na construção de aplicativos web e móveis.
-                    Estou sempre em busca de novas oportunidades para
-                    aprender e crescer como desenvolvedor front-end e
-                    aplicar minhas habilidades de forma criativa e inovadora.
-                    Minha experiência anterior em áreas como controle de estoque,
-                    armazenamento e documentação de colaboradores me
-                    ensinou a trabalhar de forma eficiente em equipe e
-                    a lidar com desafios de forma colaborativa.
-                </p>
+            <section id='experience'>
+                <div className="experience">
+                    <h2>✅ Minha experiência</h2>
+                    <p>
+                        Além de minhas habilidades técnicas em desenvolvimento front-end,
+                        também estou trabalhando como estagiário na área de front-end, aplicando novas tecnologias
+                        na construção de aplicativos web e móveis.
+                        Estou sempre em busca de novas oportunidades para
+                        aprender e crescer como desenvolvedor front-end e
+                        aplicar minhas habilidades de forma criativa e inovadora.
+                        Minha experiência anterior em áreas como controle de estoque,
+                        armazenamento e documentação de colaboradores me
+                        ensinou a trabalhar de forma eficiente em equipe e
+                        a lidar com desafios de forma colaborativa.
+                    </p>
+                </div>
+                <div className="img-about">
+                    <img src={ImgExperience} alt="imagem representa um CV" />
+                </div>
             </section>
-            <section>
-                <h2>Estilo de vida</h2>
-                <ul>
-                    <li>Amo estar com minha Família.</li>
-                    <li>Adoro carro.</li>
-                    <li>Amante de café.</li>
-                    <li>Adoro ficar inventando coisas.</li>
-                </ul>
-            </section>
-
         </div >
     );
 }

@@ -13,21 +13,59 @@
   padding-top: 10px;
 }
 
-.about-me{
+.about-me {
   display: flex;
   justify-content: center;
 }
 
-.img-about img{
-  max-width: 600px;
+.img-about img {
+  max-width: 560px;
 }
 
-.about-description{
+.about-description {
   max-width: 660px;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-right: 30px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.about-description p{
+  margin: 0;
+}
+
+.courses {
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: var(--azul);
+  padding-top: 20px;
+  height: 462px;
+  background-image: url(../../assets/img/fundo-about1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.info-courses {
+  max-width: 642px;
+  margin-left: 35%;
+  margin-top: 6%;
+}
+
+#experience{
+  display: flex;
+  justify-content: center;
+}
+
+.experience{
+  max-width: 642px;
+  margin-top: 6%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -93,7 +131,10 @@ ul li {
 }
 
 /* Estilos específicos para emojis */
-h1 span, h2:before, h2:after, li:before {
+h1 span,
+h2:before,
+h2:after,
+li:before {
   font-size: 1.5rem;
   margin-right: 0.5rem;
   vertical-align: middle;
@@ -101,13 +142,16 @@ h1 span, h2:before, h2:after, li:before {
 
 
 li:before {
-  content: "\2713"; /* emoji para marcação */
+  content: "\2713";
+  /* emoji para marcação */
   margin-right: 0.25rem;
   color: #0c0;
 }
 
 li:before {
-  content: "\2192"; /* emoji para curso em andamento */
+  content: "\2192";
+  /* emoji para curso em andamento */
   margin-right: 0.25rem;
-  color: #FFA500; /* cor laranja para indicar curso em andamento */
+  color: #FFA500;
+  /* cor laranja para indicar curso em andamento */
 }
