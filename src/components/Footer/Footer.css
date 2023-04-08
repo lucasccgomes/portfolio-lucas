@@ -1,0 +1,16 @@
+#footer{
+  margin-top: 60px;
+}
+
+
+
+.footer-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-info{
+  min-height: 100px;
+  background-color: var(--azul);
+  margin-top: -4px;
+}
