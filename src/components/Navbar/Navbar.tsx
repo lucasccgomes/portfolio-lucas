@@ -48,7 +48,6 @@ class Navbar extends Component<NavbarProps, NavbarState> {
 
     return (
       <div id='navbar'>
-        <h1>LUCAS</h1>
         <nav className={`navbar ${showMenu ? "show" : ""}`}>
           <div className="nav-itens">
             <a href="">INICIO</a>

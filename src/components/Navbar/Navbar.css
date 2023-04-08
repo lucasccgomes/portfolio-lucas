@@ -7,6 +7,7 @@
     height: 50px;
     top: 0px;
     left: 0;
+    justify-content: flex-end;
 }
 
 #navbar h1{
@@ -31,12 +32,12 @@
 }
 
 .navbar a:hover{
-    color: var(--cinzaescuro);
+    color: #ffff;
     background-color: var(--azulsec);
 }
 
 .navbar a:active{
-    background-color: rgb(24, 23, 23);
+    background-color: var(--azulsecescuro);
 }
 
 .mobile{
@@ -46,7 +47,7 @@
 }
 
 .icon-menu, .icon-close{
-    color: var(--navitens);
+    color: var(--cinzaescuro);
     font-size: 1.8em;
     cursor: pointer;
 }
@@ -80,7 +81,7 @@
         height: 100%;
         margin: 0;
         padding: 35px 0px 0px 0px;
-        background-color: var(--navbar);
+        background-color: var(--azul);
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
@@ -88,10 +89,10 @@
     }
     .show a:hover{
         color: #ffff;
-        background-color: var(--musgo);
+        background-color: var(--azulsec);
     }
     
     .show a:active{
-        background-color: rgb(24, 23, 23);
+        background-color: var(--azulsecescuro);
     }
 }
