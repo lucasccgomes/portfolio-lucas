@@ -11,27 +11,13 @@
   /* Cor de fundo:*/ --cinzaclaro: #F5F5F5; /*(um cinza claro) para o background*/
   /* Cor do texto:*/ --cinzaescuro: #333333; --cinzam: #555555;/*(um cinza escuro) para textos principais*/
   /* Cor de destaque:*/ --laranja: #FFA500; /*(um laranja) para destacar elementos importantes*/
-
-
-  
-  
-  
-  
-  
-  
-  --claro: #b7e4c7;
-  --menta: #92d5bf;
-  --limao: #c7ea46;
-  --musgo: #67864f;
-  --oliva: #b4b347;
-  --navbar: #092c25;
-  --navitens: #c4d4b0;
-
 }
 
 *{
   font-family: sans-serif;
   margin: 0;
+  text-decoration: none;
+
 }
 
 #root {
@@ -47,4 +33,17 @@
 
 .App{
   margin: auto;
+  background-color: var(--cinzaclaro);
+}
+
+p{
+  color: var(--cinzam);
+}
+
+h1{
+  color: var(--cinzam);
+}
+
+h2{
+  color: var(--cinzam);
 }
