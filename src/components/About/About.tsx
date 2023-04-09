@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div id='about'>
 
-            <div className="title-about">
+            <div className="title-about" id='title-about'>
                 <h1><b>- quem eu sou -</b></h1>
             </div>
             <div className="about-me">
@@ -34,16 +34,6 @@ const About = () => {
                     <img src={ImgAbout} alt="imagem representa foco e objetivo" />
                 </div>
             </div>
-            {/*
-            <section>
-                <h2>👩‍💻 Meus projetos</h2>
-                <p>
-                    Você pode conferir alguns dos meus projetos no meu <a target='_blank' href="https://github.com/lucasccgomes">GitHub</a>.
-                    Meus projetos incluem aplicativos web e móveis desenvolvidos com HTML5,
-                    CSS, JavaScript, React e outros frameworks populares.
-                </p>
-            </section>
-        */}
             <section className='courses'>
                 <div className="info-courses">
                     <h1>👨🏻‍🎓 Meus cursos</h1>
@@ -57,8 +47,10 @@ const About = () => {
                         que concluí recentemente:
                     </p>
                     <ul>
-                        <li>EdX - CSS Basics</li>
-                        <li>EdX - HTML5 and CSS Fundamentals</li>
+                        <li className='concluded '>EdX - CSS Basics</li>
+                        <li className='concluded '>EdX - HTML5 and CSS Fundamentals</li>
+                        <li className='concluded '>Curso em Video - Algoritimo</li>
+                        <li className='course-progress'>Edx - JavaScript Introduction</li>
                     </ul>
                 </div>
             </section>

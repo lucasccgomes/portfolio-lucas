@@ -50,10 +50,10 @@ class Navbar extends Component<NavbarProps, NavbarState> {
       <div id='navbar'>
         <nav className={`navbar ${showMenu ? "show" : ""}`}>
           <div className="nav-itens">
-            <a href="">INICIO</a>
-            <a href="">SOBRE</a>
-            <a href="">TECNOLOGIAS</a>
-            <a href="">CONTATO</a>
+            <a href="#">INICIO</a>
+            <a href="#about">SOBRE</a>
+            <a href="#project">PROJETOS</a>
+            <a target='_blank' href="https://www.linkedin.com/in/lucasccgomes/">CONTATO</a>
           </div>
         </nav>
         <div className="mobile" >
@@ -67,5 +67,4 @@ class Navbar extends Component<NavbarProps, NavbarState> {
     )
   }
 }
-
 export default Navbar;

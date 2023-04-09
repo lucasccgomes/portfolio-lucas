@@ -17,10 +17,10 @@ const Home = () => {
                         Gosto de trabalhar em equipe e estou em busca de oportunidades para crescer profissionalmente e aplicar minhas habilidades de forma criativa.</p>
                 </div>
                 <div className="icons">
-                    <BsLinkedin className='linkedin'/>
-                    <BsGithub className='github'/>
-                    <BsWhatsapp className='whatsapp'/>
-                </div>
+          <a target='_blank' href="https://www.linkedin.com/in/lucasccgomes/"><BsLinkedin className='linkedin' /></a>
+          <a target='_blank' href="https://github.com/lucasccgomes"><BsGithub className='github' /></a>
+          <a target='_blank' href="https://wa.me/5547991399367"><BsWhatsapp className='whatsapp' /></a>
+        </div>
             </div>
             <div className="profile-photo">
                 <img src={ProfilePhoto2} alt="Lucas Gomes" />

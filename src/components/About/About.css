@@ -64,10 +64,6 @@
   margin-top: 6%;
 }
 
-
-
-
-
 ul {
   list-style: none;
 }
@@ -98,14 +94,21 @@ section h2 {
 h1 span,
 h2:before,
 h2:after,
-li:before {
+.course-progress::before,
+.concluded:before {
   font-size: 1.5rem;
   margin-right: 0.5rem;
   vertical-align: middle;
 }
 
+.course-progress::before {
+  content: "\1F4DA";
+  display: inline-block;
+  margin-right: 5px; 
+}
 
-li:before {
+
+.concluded:before {
   content: "\2713";
   margin-right: 0.25rem;
   color: #0c0;
