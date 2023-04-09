@@ -108,14 +108,15 @@
     }
     .brief-description{
         margin: auto;
-        margin-left: 30px;
+        margin-left: 0px;
         margin-right: 30px;
         
     }
 
     .brief-description p{
         font-size: 1em;
-        text-align: center;
+        text-align: left;
+        margin-left: 0;
     }
 
     .helo{
