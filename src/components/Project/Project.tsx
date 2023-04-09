@@ -30,7 +30,7 @@ const Project: React.FC = () => {
   };
   return (
 
-    <div className='project'>
+    <div id='project' className='project'>
       <h1>📝 Projetos</h1>
       <Swiper
         modules={[Navigation, A11y]}
