@@ -67,5 +67,4 @@ class Navbar extends Component<NavbarProps, NavbarState> {
     )
   }
 }
-
 export default Navbar;
