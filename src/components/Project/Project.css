@@ -1,12 +1,14 @@
+.mySwiper {
+    max-width: 1400px;
+}
 
-
-h1{
+h1 {
     padding-bottom: 6px;
 }
 
 .project {
     border-top-style: solid;
-    
+
     border-color: var(--azul);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -19,6 +21,7 @@ h1{
     border-radius: 15px;
     background-color: var(--azul);
     color: var(--cinzaclaro);
+
 }
 
 .card-project h1 {
@@ -70,50 +73,49 @@ h1{
     transform: scale(.9);
 }
 
-.acessa{
+.acessa {
     margin-left: 9px;
 }
-
 
 .section {
     display: none;
     transform: translateY(0%);
     animation-duration: 0.8s;
     animation-fill-mode: both;
-  }
-  
-  .section.show {
+}
+
+.section.show {
     display: block;
     animation-name: slide-up;
-  }
-  
-  .section.hide {
+}
+
+.section.hide {
     animation-name: slide-down;
     animation-duration: 0.8s;
     animation-fill-mode: both;
     display: block;
-  }
+}
 
 
-  @keyframes slide-up {
+@keyframes slide-up {
     from {
-      transform: translateY(200%);
+        transform: translateY(200%);
     }
-  
+
     to {
-      transform: translateY(0%);
+        transform: translateY(0%);
     }
-  }
-  
-  @keyframes slide-down {
+}
+
+@keyframes slide-down {
     from {
-      transform: translateY(0%);
+        transform: translateY(0%);
     }
-  
+
     to {
-      transform: translateY(200%);
+        transform: translateY(200%);
     }
-  }
+}
 
 
 .info {
@@ -177,4 +179,10 @@ h1{
 
 .javascript {
     color: #E9B925;
+}
+
+@media only screen and (max-width: 964px) {
+    .card-project {
+        min-width: 330px;
+    }
 }

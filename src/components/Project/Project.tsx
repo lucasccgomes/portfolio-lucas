@@ -13,7 +13,7 @@ import CloneNetflix from '../../assets/img/clone-netflix.png';
 import MusicPlayer from '../../assets/img/music-player.png';
 import CursoHtmlCss from '../../assets/img/curso-html-css.png';
 import LpBoloPote from '../../assets/img/lp-bolo-pote.png';
-
+import { Pagination } from "swiper";
 import { Navigation, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -33,12 +33,18 @@ const Project: React.FC = () => {
     <div id='project' className='project'>
       <h1>📝 Projetos</h1>
       <Swiper
-        modules={[Navigation, A11y]}
-        spaceBetween={40}
-        slidesPerView={1.3}
-        navigation
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}>
+      
+        className="mySwiper"
+        slidesPerView={"auto"}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        grabCursor={true}
+        modules={[Pagination, Navigation]}
+        navigation={true}
+      >
+
         <SwiperSlide className='card-project'>
           <h1><BsCalculator />:Build-a-Calculator</h1>
           <div className="img-card">
