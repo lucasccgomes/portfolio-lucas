@@ -15,7 +15,7 @@
   align-items: flex-start;
   min-height: 100px;
   background-color: var(--azul);
-  margin-top: -4px;
+  margin-top: -6px;
 
 }
 
@@ -33,7 +33,5 @@
 }
 
 @media only screen and (max-width: 1145px) {
-  .footer-info{
-    margin-top: -5px;
-  }
+ 
 }
