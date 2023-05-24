@@ -1,12 +1,10 @@
 import './Project.css';
 import React, { useState } from 'react';
-
 import { DiCss3, DiJavascript } from 'react-icons/di';
 import { AiFillHtml5, AiOutlineLogin } from 'react-icons/ai';
 import { BsCalculator, BsMusicPlayer } from 'react-icons/bs';
 import { RiPagesLine, RiNetflixFill, RiCake3Line } from 'react-icons/ri';
 import { MdOutlineSchool } from 'react-icons/md';
-
 import BuildCalculator from '../../assets/img/build-a-calculator.png';
 import LandingPage from '../../assets/img/landing-page.png';
 import CloneNetflix from '../../assets/img/clone-netflix.png';
@@ -30,11 +28,9 @@ const Project: React.FC = () => {
     setActiveSection(activeSection === id ? '' : id);
   };
   return (
-
     <div id='project' className='project'>
       <h1>📝 Projetos</h1>
       <Swiper
-      
         className="mySwiper"
         slidesPerView={"auto"}
         spaceBetween={30}
@@ -196,10 +192,10 @@ const Project: React.FC = () => {
           </div>
           <div id="descricao-telalogingoogle" className={`section ${activeSection === "telalogingoogle" ? "show" : "hide"}`}>
             <div className='info'>
-              <p>Tela de login com autenticação usando contas do Google, 
-                utilizando o serviço Firebase como plataforma de backend. 
-                A ideia é oferecer aos usuários a possibilidade de acessar o sistema 
-                de forma rápida e segura, utilizando suas contas do Google para autenticação. 
+              <p>Tela de login com autenticação usando contas do Google,
+                utilizando o serviço Firebase como plataforma de backend.
+                A ideia é oferecer aos usuários a possibilidade de acessar o sistema
+                de forma rápida e segura, utilizando suas contas do Google para autenticação.
                 O Firebase será responsável por gerenciar a autenticação.</p>
             </div>
           </div>
