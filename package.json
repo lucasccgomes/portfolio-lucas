@@ -10,7 +10,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "commit": "cz"
+    "commit": "cz",
+    "depush": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "commitizen": "^4.3.0",
