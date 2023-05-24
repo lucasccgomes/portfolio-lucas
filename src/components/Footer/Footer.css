@@ -15,14 +15,14 @@
   align-items: flex-start;
   min-height: 100px;
   background-color: var(--azul);
-  margin-top: -4px;
+  margin-top: -6px;
 
 }
 
 .footer-info p {
   margin-left: 30px;
   position: relative;
-  bottom: -40px;
+  bottom: -28px;
   margin: 0;
   margin-left: 20px;
 }
@@ -33,7 +33,5 @@
 }
 
 @media only screen and (max-width: 1145px) {
-  .footer-info{
-    margin-top: -5px;
-  }
+ 
 }

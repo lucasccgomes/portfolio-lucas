@@ -2,7 +2,7 @@ import './Project.css';
 import React, { useState } from 'react';
 
 import { DiCss3, DiJavascript } from 'react-icons/di';
-import { AiFillHtml5 } from 'react-icons/ai';
+import { AiFillHtml5, AiOutlineLogin } from 'react-icons/ai';
 import { BsCalculator, BsMusicPlayer } from 'react-icons/bs';
 import { RiPagesLine, RiNetflixFill, RiCake3Line } from 'react-icons/ri';
 import { MdOutlineSchool } from 'react-icons/md';
@@ -13,7 +13,8 @@ import CloneNetflix from '../../assets/img/clone-netflix.png';
 import MusicPlayer from '../../assets/img/music-player.png';
 import CursoHtmlCss from '../../assets/img/curso-html-css.png';
 import LpBoloPote from '../../assets/img/lp-bolo-pote.png';
-
+import TelaLoginGoogle from '../../assets/img/tela-login-google.png';
+import { Pagination } from "swiper";
 import { Navigation, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -33,12 +34,18 @@ const Project: React.FC = () => {
     <div id='project' className='project'>
       <h1>📝 Projetos</h1>
       <Swiper
-        modules={[Navigation, A11y]}
-        spaceBetween={40}
-        slidesPerView={1.3}
-        navigation
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}>
+      
+        className="mySwiper"
+        slidesPerView={"auto"}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        grabCursor={true}
+        modules={[Pagination, Navigation]}
+        navigation={true}
+      >
+
         <SwiperSlide className='card-project'>
           <h1><BsCalculator />:Build-a-Calculator</h1>
           <div className="img-card">
@@ -161,6 +168,39 @@ const Project: React.FC = () => {
             <div className='info'>
               <p>Clone da Netflix, criado apenas com HTML e CSS. Com um design limpo e moderno,
                 a página foi desenvolvida para imitar a experiência de navegação na Netflix</p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='card-project'>
+          <h1><AiOutlineLogin />:Tela-Login-Google</h1>
+          <div className="img-card">
+            <img src={TelaLoginGoogle} alt="Projeto pessoal tela de login com conta google" />
+          </div>
+          <div className="card-info">
+            <div className="card-icon">
+              <p className='progress'><AiFillHtml5 className='html5' />3.6%</p>
+              <p className='progress'><DiCss3 className='css3' />33.1%</p>
+              <p className='progress'><DiJavascript className='javascript' />63.3%</p>
+            </div>
+            <div id="button">
+              <button className="button-descrition">
+                <a id="telalogingoogle"
+                  className="button"
+                  onClick={() => handleDescriptionClick("telalogingoogle")}>DESCRIÇÃO</a>
+              </button>
+              <button className="acessa button-descrition">
+                <a className="button" target='_blank'
+                  href='https://lucasccgomes.github.io/tela-login-google/' >ABRIR</a>
+              </button>
+            </div>
+          </div>
+          <div id="descricao-telalogingoogle" className={`section ${activeSection === "telalogingoogle" ? "show" : "hide"}`}>
+            <div className='info'>
+              <p>Tela de login com autenticação usando contas do Google, 
+                utilizando o serviço Firebase como plataforma de backend. 
+                A ideia é oferecer aos usuários a possibilidade de acessar o sistema 
+                de forma rápida e segura, utilizando suas contas do Google para autenticação. 
+                O Firebase será responsável por gerenciar a autenticação.</p>
             </div>
           </div>
         </SwiperSlide>
