@@ -1,9 +1,9 @@
 import './Project.css';
 import React, { useState } from 'react';
 import { DiCss3, DiJavascript } from 'react-icons/di';
-import { AiFillHtml5, AiOutlineLogin } from 'react-icons/ai';
+import { AiFillHtml5, AiOutlineLogin, AiFillRobot } from 'react-icons/ai';
 import { BsCalculator, BsMusicPlayer } from 'react-icons/bs';
-import { RiPagesLine, RiNetflixFill, RiCake3Line } from 'react-icons/ri';
+import { RiPagesLine, RiNetflixFill, RiCake3Line, RiTodoLine } from 'react-icons/ri';
 import { MdOutlineSchool } from 'react-icons/md';
 import BuildCalculator from '../../assets/img/build-a-calculator.png';
 import LandingPage from '../../assets/img/landing-page.png';
@@ -12,6 +12,8 @@ import MusicPlayer from '../../assets/img/music-player.png';
 import CursoHtmlCss from '../../assets/img/curso-html-css.png';
 import LpBoloPote from '../../assets/img/lp-bolo-pote.png';
 import TelaLoginGoogle from '../../assets/img/tela-login-google.png';
+import AdivinheNumero from '../../assets/img/adivinhe-o-numero.png';
+import TodoListTailwind from '../../assets/img/todo-list-tailwind.png';
 import { Pagination } from "swiper";
 import { Navigation, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -200,6 +202,71 @@ const Project: React.FC = () => {
             </div>
           </div>
         </SwiperSlide>
+
+        <SwiperSlide className='card-project'>
+          <h1><AiFillRobot />:Adivinhe-o-Numero</h1>
+          <div className="img-card">
+            <img src={AdivinheNumero} alt="projeto de JS" />
+          </div>
+          <div className="card-info">
+            <div className="card-icon">
+              <p className='progress'><AiFillHtml5 className='html5' />7.8%</p>
+              <p className='progress'><DiCss3 className='css3' />19.6%</p>
+              <p className='progress'><DiJavascript className='javascript' />72.6%</p>
+            </div>
+            <div id="button">
+              <button className="button-descrition">
+                <a id="adivinheNumero"
+                  className="button"
+                  onClick={() => handleDescriptionClick("adivinheNumero")}>DESCRIÇÃO</a>
+              </button>
+              <button className="acessa button-descrition">
+                <a className="button" target='_blank'
+                  href='https://lucasccgomes.github.io/adivinhe-o-numero/' >ABRIR</a>
+              </button>
+            </div>
+          </div>
+          <div id="descricao-adivinheNumero" className={`section ${activeSection === "adivinheNumero" ? "show" : "hide"}`}> <div className='info'>
+            <p>Este projeto é um jogo de adivinhação de números desenvolvido para me ajudar
+               a praticar habilidades em JavaScript. 
+               Nele, um número é selecionado aleatoriamente pelo robô e seu objetivo como 
+               jogador é adivinhar qual número foi escolhido.</p>
+          </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className='card-project'>
+          <h1><RiTodoLine />:To-do-List-Tailwind</h1>
+          <div className="img-card">
+            <img src={TodoListTailwind} alt="projeto de JS" />
+          </div>
+          <div className="card-info">
+            <div className="card-icon">
+              <p className='progress'><AiFillHtml5 className='html5' />7.2%</p>
+              <p className='progress'><DiCss3 className='css3' />4.2%</p>
+              <p className='progress'><DiJavascript className='javascript' />88.6%</p>
+            </div>
+            <div id="button">
+              <button className="button-descrition">
+                <a id="todoListTailwind"
+                  className="button"
+                  onClick={() => handleDescriptionClick("todoListTailwind")}>DESCRIÇÃO</a>
+              </button>
+              <button className="acessa button-descrition">
+                <a className="button" target='_blank'
+                  href='https://lucasccgomes.github.io/adivinhe-o-numero/' >ABRIR</a>
+              </button>
+            </div>
+          </div>
+          <div id="descricao-todoListTailwind" className={`section ${activeSection === "todoListTailwind" ? "show" : "hide"}`}> <div className='info'>
+            <p>Este projeto é uma lista de tarefas simples desenvolvida usando 
+              o framework CSS chamado Tailwind CSS. 
+              A lista de tarefas é uma ferramenta útil para ajudar você a se 
+              organizar e acompanhar as atividades que precisa realizar.</p>
+          </div>
+          </div>
+        </SwiperSlide>
+
+
         <SwiperSlide className='card-project'>
           <h1><BsMusicPlayer />:Music-Player</h1>
           <div className="img-card">
