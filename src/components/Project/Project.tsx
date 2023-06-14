@@ -253,7 +253,7 @@ const Project: React.FC = () => {
               </button>
               <button className="acessa button-descrition">
                 <a className="button" target='_blank'
-                  href='https://lucasccgomes.github.io/adivinhe-o-numero/' >ABRIR</a>
+                  href='https://todo-list-tailwind.netlify.app/' >ABRIR</a>
               </button>
             </div>
           </div>
