@@ -21,7 +21,7 @@ img {
 }
 
 .video-mobile {
-    margin-left: 7.5px;
+    margin-left: 7px;
     margin-top: -168px;
     margin-right: 13px;
     margin-bottom: 10px;
@@ -92,7 +92,7 @@ video {
         max-width: 299px;
         height: auto;
         margin-left: 47px;
-        margin-top: -246px;
+        margin-top: -244px;
         margin-right: 10px;
         margin-bottom: 10px;
         position: absolute;
@@ -101,7 +101,7 @@ video {
     
     .video-mobile {
         margin-left: 6.5px;
-        margin-top: -139px;
+        margin-top: -137px;
         margin-right: 13px;
         margin-bottom: 10px;
         position: absolute;
@@ -119,7 +119,7 @@ video {
     }
 
     .video-admin {
-        left: 61px;
+        left: 19px;
     }
 
     .video-desktop {

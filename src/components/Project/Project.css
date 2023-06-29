@@ -1,188 +1,296 @@
 .mySwiper {
-    max-width: 1400px;
+  max-width: 100%;
 }
 
 h1 {
-    padding-bottom: 6px;
+  padding-bottom: 6px;
 }
 
 .project {
-    border-top-style: solid;
+  border-top-style: solid;
 
-    border-color: var(--azul);
-    padding-top: 60px;
-    padding-bottom: 60px;
+  border-color: var(--azul);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .card-project {
-    margin: auto;
-    width: 300px !important;
-    height: 430px !important;
-    border-radius: 15px;
-    background-color: var(--azul);
-    color: var(--cinzaclaro);
+  margin: auto;
+  width: 515px !important;
+  height: 430px !important;
+  border-radius: 15px;
 
+  color: var(--cinzaclaro);
 }
 
 .card-project h1 {
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: 10px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    color: var(--cinzaclaro);
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: var(--cinzam);
 }
 
 .calculator {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .img-card {
-    width: 250px;
-    height: 350px;
-    margin: auto;
-
+  width: 515px;
+  height: 350px;
+  margin: auto;
 }
 
 .img-card img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10%;
+  width: 100%;
+  height: 100%;
 }
 
 .button-descrition {
-    background-color: var(--azul);
-    border: 0;
-    cursor: pointer;
-    padding: 8px;
-    border-radius: 28px;
-    min-height: 42px;
-    margin-bottom: 8px;
-    margin-top: 8px;
+  background-color: var(--azul);
+  border: 0;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 28px;
+  min-height: 50%;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.bt-descr {
+  position: absolute;
+  bottom: 76px;
+  left: 337px;
 }
 
 .button {
-    font-family: "FjallaOne";
-    font-size: 1.3em;
-    color: var(--cinzaescuro);
-
+  font-family: "FjallaOne";
+  font-size: 1em;
+  color: var(--cinzaescuro);
 }
 
 .button-descrition:hover {
-    transform: scale(.9);
+  transform: scale(0.9);
 }
 
 .acessa {
-    margin-left: 9px;
+  margin-left: 9px;
 }
 
 .section {
-    display: none;
-    transform: translateY(0%);
-    animation-duration: 0.8s;
-    animation-fill-mode: both;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
-
-.section.show {
-    display: block;
-    animation-name: slide-up;
-}
-
-.section.hide {
-    animation-name: slide-down;
-    animation-duration: 0.8s;
-    animation-fill-mode: both;
-    display: block;
-}
-
-
-@keyframes slide-up {
-    from {
-        transform: translateY(200%);
-    }
-
-    to {
-        transform: translateY(0%);
-    }
-}
-
-@keyframes slide-down {
-    from {
-        transform: translateY(0%);
-    }
-
-    to {
-        transform: translateY(200%);
-    }
-}
-
 
 .info {
-    margin: auto;
-    position: relative;
-    bottom: 430px;
-    background-color: var(--cinzaclaro);
-    border-radius: 15px 15px 0px 0px;
-    padding: 5px;
-    color: var(--cinzaescuro);
-    max-width: 270px;
-    height: 230px;
+  margin: auto;
+  position: relative;
+  left: 15px;
+  bottom: 230px;
+  background-color: var(--cinzaclaro);
+  border-radius: 15px 15px 15px 15px;
+  padding: 5px;
+  color: var(--cinzaescuro);
+  max-width: 299px;
+  height: 191px;
 }
 
 .info p {
-    padding: 15px;
-    font-size: 1em;
+  padding: 15px;
+  font-size: 1em;
 }
 
-.card-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    min-height: 20%;
-    min-width: 100%;
-    background-color: var(--cinzaclaro);
-    bottom: 90px;
-    z-index: 1;
+#card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 20%;
+  min-width: 100%;
+  bottom: 90px;
+  z-index: -1;
+}
 
+.show {
+  display: block;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.hide {
+  display: none;
+  opacity: 1;
+  animation: fadeOut 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .card-icon {
-    display: flex;
-    flex-direction: row;
-    padding-top: 10px;
-    align-items: center;
-    color: var(--cinzaescuro);
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  align-items: center;
+  color: var(--cinzaescuro);
 }
 
 .progress {
-    display: flex;
-    align-items: center;
-    margin: 0px;
+  display: flex;
+  align-items: center;
+  margin: 0px;
 }
 
 .html5,
 .css3,
 .javascript {
-    font-size: 2em;
-
+  font-size: 2em;
 }
 
 .html5 {
-    color: #E9642B;
+  color: #e9642b;
 }
 
 .css3 {
-    color: #3E95CF;
+  color: #3e95cf;
 }
 
 .javascript {
-    color: #E9B925;
+  color: #e9b925;
 }
 
 @media only screen and (max-width: 964px) {
-    .card-project {
-        min-width: 330px;
-    }
+  .card-project {
+    min-width: 330px;
+  }
 }
+
+@media only screen and (max-width: 551px) {
+  .bt-descr {
+    bottom: 77px;
+    left: 376px;
+  }
+
+  .button {
+    font-family: "FjallaOne";
+    font-size: 0.8em;
+    color: var(--cinzaescuro);
+  }
+
+  .button-descrition {
+    background-color: var(--azul);
+    border: 0;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 15px;
+    min-height: 15px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .img-card {
+    max-width: 393px;
+  }
+
+  .bt-descr {
+    bottom: 142px;
+    left: 326px;
+  }
+
+  #card-info {
+    bottom: 4px;
+  }
+
+  .info {
+    max-width: 240px;
+    max-height: 150px;
+    bottom: 250px;
+  }
+
+  .info p {
+    font-size: 0.8rem;
+    padding: 9px;
+  }
+}
+
+@media only screen and (max-width: 484px) {
+    .card-project {
+        margin: auto;
+        width: 440px !important;
+    }
+
+  .button-descrition {
+    background-color: var(--azul);
+    border: 0;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 12px;
+    height: 21px;
+    margin-bottom: 11px;
+    margin-top: 8px;
+  }
+
+  .button {
+    margin-bottom: 3px;
+  }
+
+  .bt-descr {
+    position: absolute;
+    bottom: 171px;
+    left: 224px;
+  }
+
+  .project {
+    padding-bottom:  0px;
+  }
+
+  .button {
+    font-family: "FjallaOne";
+    font-size: 0.8em;
+    color: var(--cinzaescuro);
+  }
+
+  .button-descrition:hover {
+    transform: scale(0.9);
+  }
+
+  .img-card {
+    margin: 18px;
+    max-width: 320px;
+  }
+
+  #card-info {
+    bottom: 4px;
+  }
+
+  .info {
+    max-width: 201px;
+    max-height: 115px;
+    bottom: 205px;
+  }
+
+  .info p {
+    font-size: 0.7rem;
+    padding: 3px;
+  }
+  
+}
+

@@ -4,7 +4,7 @@
     background-color: var(--cinzaclaro);
     color: var(--cinzaescuro);
     padding-bottom: 70px;
-    background-image: url(../../assets/img/fundo-home2.png);
+    background-image: url(../../assets/img/fundo-home2.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -44,6 +44,10 @@
     line-height: normal;
     text-align: justify;
     margin: 0;
+}
+
+.developer {
+    margin-top: -22px;
 }
 
 .brief-description{
@@ -126,6 +130,10 @@
 
     .myname{
         font-size: 3em;
+    }
+
+    .developer {
+        margin-top: -20px;
     }
 
     .profile-photo{

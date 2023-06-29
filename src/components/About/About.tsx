@@ -1,7 +1,8 @@
 import React from 'react';
 import './About.css'
-import ImgAbout from '../../assets/img/about.png'
-import ImgExperience from '../../assets/img/experience.png'
+import ImgAbout from '../../assets/img/about.svg'
+import ImgExperience from '../../assets/img/experience.svg'
+
 
 const About = () => {
     return (

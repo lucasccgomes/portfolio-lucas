@@ -1,5 +1,5 @@
 import './Footer.css'
-import ImgFooter from '../../assets/img/footer.png'
+import ImgFooter from '../../assets/img/footer.svg'
 import React from 'react';
 import { BsLinkedin, BsGithub, BsWhatsapp } from 'react-icons/bs'
 
