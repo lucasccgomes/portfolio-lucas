@@ -46,7 +46,7 @@ const Project: React.FC = () => {
         navigation={true}
       >
 
-        <SwiperSlide  id="" className="card-project">
+        <SwiperSlide className="card-project">
           <h1>
             <BsCalculator />
             :Build-a-Calculator
